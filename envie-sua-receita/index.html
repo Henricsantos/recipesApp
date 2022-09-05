@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Enviar receita</title>
+</head>
+<body>
+    <form class="container">
+
+        <h1>Enviar receita</h1>
+
+            <div class="main">
+            
+                    <input type="email" name="email" placeholder="Digite seu e-mail" aria-required="true">
+                    <input type="text" name="nomeDaReceita" placeholder="Qual o nome da sua receita?" aria-required="true">
+                 
+                <label for="ingredientes">Ingredientes: </label>
+                    <textarea name="ingredientes" cols="50" rows="7" aria-required="true"></textarea>
+                <label for="modoDePreparo">Modo de preparo: </label>
+                    <textarea name="modoDePreparo" cols="50" rows="7" aria-required="true"></textarea>
+            </div>
+            <div class="bottom-button">
+                <a class="button" href="../index.html" id="retornar">Retornar ao menu principal</a>
+                <a class="button" href="../index.html" onclick="receitaEnviada()" >Enviar receita</a>
+                
+            </div>
+            
+
+    </form>
+    <script>
+        function receitaEnviada(){
+                window.alert("Receita enviada!!!");            
+        }
+    </script>
+</body>
+</html>
